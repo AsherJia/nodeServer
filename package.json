@@ -1,0 +1,24 @@
+{
+  "name": "nodeServer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Asher <jiazw@ctrip.com>",
+  "license": "MIT",
+  "scripts": {
+    "tsb": "rm -rf dest/ && tsc --outDir ./dest || true",
+    "tsw": "tsc --w --outDir ./dest",
+    "build": "ts-node src/server.ts"
+  },
+  "dependencies": {
+    "@types/node": "^12.0.2",
+    "koa-bodyparser": "^4.2.1",
+    "koa-jsonp": "^2.0.2",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "koa2": "^2.0.0-alpha.7",
+    "typescript": "^3.4.5"
+  },
+  "devDependencies": {
+    "ts-node": "^8.1.0"
+  }
+}
